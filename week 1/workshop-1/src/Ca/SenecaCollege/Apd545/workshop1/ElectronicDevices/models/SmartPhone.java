@@ -4,7 +4,7 @@ import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.Communication
 
 public class SmartPhone extends CommunicationDevice {
     public SmartPhone(double price) {
-        super("SmartPhone", price, "Multi-functional");
+        super("SmartPhone", price, "Communication and apps", "Multi-functional");
     }
 
     public String getMaintenanceInstructions() {

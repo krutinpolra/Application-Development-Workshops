@@ -4,7 +4,7 @@ import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.Entertainment
 
 public class SmartTv extends EntertainmentDevice {
     public SmartTv(double price) {
-        super("SmartTV", price, "Visual entertainment");
+        super("SmartTV", price, "Streaming and media viewing", "Visual entertainment");
     }
 
     @Override

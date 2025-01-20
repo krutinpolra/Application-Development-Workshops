@@ -4,7 +4,7 @@ import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.UtilityDevice
 
 public class SmartSpeaker extends UtilityDevice{
     public SmartSpeaker(double price) {
-        super("SmartSpeaker", price, "Audio assistance");
+        super("SmartSpeaker", price, "Voice-controlled assistance", "Audio assistance");
     }
 
     @Override

@@ -4,7 +4,7 @@ import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.Entertainment
 
 public class GamingConsole extends EntertainmentDevice{
     public GamingConsole(double price) {
-        super("GamingConsole", price, "Interactive entertainment");
+        super("GamingConsole", price, "Video gaming", "Interactive entertainment");
     }
 
     @Override

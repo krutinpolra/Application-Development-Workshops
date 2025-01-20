@@ -57,7 +57,7 @@ public class ConsoleView {
             if ((category.equalsIgnoreCase("CommunicationDevice") && device instanceof CommunicationDevice) ||
                     (category.equalsIgnoreCase("EntertainmentDeice") && device instanceof EntertainmentDevice) ||
                     (category.equalsIgnoreCase("UtilityDevices") && device instanceof UtilityDevice)) {
-                displayMessage(device.getName() + ": " + device.getFunctionType());
+                displayMessage(device.getName() + ": " + device.getFunctionality());
             }
         }
         displayMessage("\n");
