@@ -2,7 +2,7 @@ package Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.models;
 
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.CommunicationDevice;
 
-class SmartPhone extends CommunicationDevice {
+public class SmartPhone extends CommunicationDevice {
     public SmartPhone(double price) {
         super("SmartPhone", price, "Multi-functional");
     }
