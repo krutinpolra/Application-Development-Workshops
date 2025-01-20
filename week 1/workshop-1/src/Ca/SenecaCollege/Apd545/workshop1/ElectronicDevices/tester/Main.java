@@ -1,7 +1,6 @@
 package Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.tester;
 
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.controllers.DeviceController;
-import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.ElectronicDevice;
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.views.ConsoleView;
 
 public class Main {
