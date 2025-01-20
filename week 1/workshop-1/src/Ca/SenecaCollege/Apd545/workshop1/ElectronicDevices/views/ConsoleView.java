@@ -33,7 +33,7 @@ public class ConsoleView {
     public void displayDeviceDetails(ElectronicDevice device){
         displayMessage("--: Requirement 2 :--");
         displayMessage("The most expensive device is: " + device.getName());
-        displayMessage(device.getName() + "/' cost is: $" + device.getCost());
+        displayMessage(device.getName() + "'s cost is: $" + device.getCost());
         displayMessage(device.getName() + " is operated: " + device.getOperationInstruction());
         displayMessage(device.getName() + " maintenance: " + device.getMaintenanceInstructions());
         displayMessage(device.getName() + " function type: " + device.getFunctionType());
@@ -55,8 +55,8 @@ public class ConsoleView {
         String category = getStringInput("Enter a device category (CommunicationDevice, EntertainmentDevice, UtilityDevice): ");
         for (ElectronicDevice device : devices) {
             if ((category.equalsIgnoreCase("CommunicationDevice") && device instanceof CommunicationDevice) ||
-                    (category.equalsIgnoreCase("EntertainmentDeice") && device instanceof EntertainmentDevice) ||
-                    (category.equalsIgnoreCase("UtilityDevices") && device instanceof UtilityDevice)) {
+                    (category.equalsIgnoreCase("EntertainmentDevice") && device instanceof EntertainmentDevice) ||
+                    (category.equalsIgnoreCase("UtilityDevice") && device instanceof UtilityDevice)) {
                 displayMessage(device.getName() + ": " + device.getFunctionality());
             }
         }
