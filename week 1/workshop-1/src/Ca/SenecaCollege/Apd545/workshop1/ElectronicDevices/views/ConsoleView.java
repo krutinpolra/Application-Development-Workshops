@@ -7,10 +7,7 @@ Id: 135416220
 package Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.views;
 
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.models.*;
-import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.CommunicationDevice;
-import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.ElectronicDevice;
-import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.EntertainmentDevice;
-import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.UtilityDevice;
+import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.*;
 
 import java.util.Scanner;
 
@@ -40,8 +37,15 @@ public class ConsoleView {
         displayMessage("--: Requirement 2 :--");
         displayMessage("The most expensive device is: " + device.getName());
         displayMessage(device.getName() + "'s cost is: $" + device.getCost());
-        displayMessage(device.getName() + " is operated: " + device.getOperationInstruction());
-        displayMessage(device.getName() + " maintenance: " + device.getMaintenanceInstructions());
+        if (device instanceof SmartSpeaker){
+            displayMessage(device.getName() + " maintenance: " + ((SmartSpeaker) device).getMaintenanceInstruction());
+        }
+        if (device instanceof IDeviceMaintainable){
+            displayMessage(device.getName() + " maintenance: " + ((IDeviceMaintainable) device).getMaintenanceInstructions());
+        }
+        if (device instanceof IDeviceOperable){
+            displayMessage(device.getName() + " is operated: " + ((IDeviceOperable) device).getOperationInstruction());
+        }
         displayMessage(device.getName() + " function type: " + device.getFunctionType());
         displayMessage("\n");
     }

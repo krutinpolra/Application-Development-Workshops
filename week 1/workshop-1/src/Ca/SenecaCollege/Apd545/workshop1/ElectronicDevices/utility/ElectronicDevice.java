@@ -6,7 +6,7 @@ Id: 135416220
 
 package Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility;
 
-public abstract class ElectronicDevice implements IDeviceMaintainable, IDeviceOperable, Comparable<ElectronicDevice> {
+public abstract class ElectronicDevice implements Comparable<ElectronicDevice>{
     protected String name;
     protected Double Cost;
     protected String functionality;
@@ -36,12 +36,7 @@ public abstract class ElectronicDevice implements IDeviceMaintainable, IDeviceOp
     }
 
     @Override
-    public int compareTo(ElectronicDevice o) {
-        return Double.compare(o.getCost(), this.Cost);
-    }
-
-    @Override
-    public String toString() {
-        return name;
+    public int compareTo(ElectronicDevice other) {
+        return Double.compare(this.Cost, other.Cost);
     }
 }

@@ -9,6 +9,9 @@ import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.models.*;
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.utility.ElectronicDevice;
 import Ca.SenecaCollege.Apd545.workshop1.ElectronicDevices.views.ConsoleView;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class DeviceController {
     private ConsoleView view;
     private ElectronicDevice[] devices;
@@ -39,7 +42,7 @@ public class DeviceController {
     }
 
     public void sortDeviceByPrice() {
-        java.util.Arrays.sort(devices);
+        Arrays.sort(devices, Comparator.reverseOrder());
         view.displayInDescendingOrder(devices);
     }
 
