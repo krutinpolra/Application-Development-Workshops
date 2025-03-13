@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.apd.ws3.auto_loan_applicationws3.Controllers.AmortizationController">
+
+    <TableView fx:id="amortizationTable">
+        <columns>
+            <TableColumn text="Payment No." fx:id="paymentNumberCol"/>
+            <TableColumn text="Payment Date" fx:id="paymentDateCol"/>
+            <TableColumn text="Payment Amount" fx:id="paymentAmountCol"/>
+            <TableColumn text="Interest Amount" fx:id="interestAmountCol"/>
+            <TableColumn text="Principal Paid" fx:id="principalPaidCol"/>
+            <TableColumn text="Ending Balance" fx:id="endingBalanceCol"/>
+        </columns>
+    </TableView>
+
+    <Button fx:id="closeButton" text="Close" onAction="#handleClose"/>
+</VBox>

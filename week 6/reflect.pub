@@ -1,0 +1,32 @@
+**Reflection on Loan Application Implementation**
+
+### Challenges Encountered in Loan Calculation Logic
+
+One of the major challenges I faced was ensuring that the loan calculation logic accounted for different payment frequencies (weekly, bi-weekly, monthly) while maintaining accurate interest calculations. Initially, the interest was being applied incorrectly, leading to misaligned payment amounts and incorrect final balances. To resolve this, I revised the calculation logic by determining the correct interest per period based on the selected frequency and ensuring that the principal and interest were correctly distributed in each payment.
+
+Another issue I encountered was the persistence of negative interest values towards the end of the schedule. This happened because payments continued even after the balance reached zero. I solved this by implementing a condition to stop further calculations once the balance was fully paid.
+
+### Ensuring Accurate Amortization Schedule Display
+
+To ensure that the amortization schedule displayed correctly, I used JavaFX TableView for structured data representation. Additionally, I formatted numerical values using `String.format()` to maintain consistency in decimal places for payment amounts, interest, and principal.
+
+For date formatting, I applied `DateTimeFormatter.ofPattern("yyyy-MM-dd")` to ensure that all payment dates were presented in a uniform and readable format. These techniques helped make the schedule clear and professional-looking.
+
+### Most Challenging Part of the Workshop
+
+The most difficult part of the workshop was debugging errors related to incorrect interest calculations and unexpected extra rows in the amortization schedule. It took careful debugging and logic adjustments to identify where incorrect values were being generated. I overcame this by systematically breaking down the calculations, printing interim values for verification, and using test cases to confirm the correctness of different scenarios.
+
+Through this process, I learned valuable skills such as handling floating-point precision, structuring financial calculations efficiently, and debugging JavaFX applications effectively. Understanding how loan payments are structured in real-world applications was particularly enlightening.
+
+### Potential Extensions & Additional Features
+
+If I were to extend this application, I would add the following features:
+- User Data Persistence: Allow users to save their calculated loans and retrieve them later using a database or file storage.
+- Simple Interest vs. Compound Interest Toggle: Allow users to switch between simple and compound interest calculations.
+- Custom Payment Schedules: Provide users with the flexibility to make additional payments and see how that affects their loan schedule.
+- Export to PDF/CSV: Enable users to export the amortization schedule in PDF or CSV format for easy sharing and printing.
+
+For implementation, I would use SQLite for data storage, By adding a RadioButton or Checkbox for the user to select the interest type and adjusting the calculation formula in FixedRateLoan accordingly i would implement simple vs compund interest,and Apache PDFBox for exporting to PDF.
+
+This workshop was an enriching experience that strengthened my Java programming skills and understanding of financial calculations. I look forward to applying these learnings in future projects!
+

@@ -1,0 +1,49 @@
+KRUTIN POLRA
+135416220
+
+Reflection on Vehicle Maintenance and Usage Management System Development
+
+**Project Overview**
+The Vehicle Maintenance and Usage Management System (VMUMS) is a JavaFX application designed to manage vehicle data, maintenance records, and usage logs. The project follows the MVC (Model-View-Controller) architecture, ensuring modularity and maintainability. The application allows users to add vehicle details, track maintenance history, and log vehicle usage efficiently.
+
+**Challenges Faced & Solutions Implemented**
+
+1. Implementing Next and Previous Tab Navigation  
+   - Issue: Initially, navigation between tabs was not functional.
+   - Solution: Implemented `handleNext()` and `handlePrevious()` methods to change tabs using `tabPane.getSelectionModel().select()`.
+
+2. Maintaining ID Consistency Across Tables 
+   - Issue: The application needed a unique vehicle ID shared across Vehicles, Maintenance, and Usage Logs.
+   - Solution: Added an `id` field in `VehicleData` and ensured maintenance and usage records referenced the same vehicle ID.
+
+3. Clearing Fields Based on Active Tab  
+   - Issue: The original `clearFields()` method reset all input fields, even for unrelated tabs.
+   - Solution: Modified `handleClear()` to check the selected tab and clear only relevant fields.
+
+4. Ensuring Data Binding for TableView 
+   - Issue: TableView was not updating correctly.
+   - Solution: Used `PropertyValueFactory<>` to bind JavaFX properties and observable lists for dynamic updates.
+
+5. Structuring Code in MVC 
+   - Issue: Initially, some model logic was mixed within the controller.
+   -Solution: Separated concerns:
+     - Model (`models` package): Contains data classes (`VehicleData`, `MaintenanceRecord`, `UsageLog`).
+     - View (`hello-view.fxml`): Defines UI elements.
+     - Controller (`HelloController`): Handles user interaction and updates models.
+
+### Key Takeaways & Learning Outcomes
+- Improved understanding of JavaFX, including Scene Builder, TableView, and event-driven programming.
+- Reinforced knowledge of MVC architecture, improving maintainability and scalability.
+- Hands-on experience in implementing ID consistency across multiple data tables.
+- Developed problem-solving skills in debugging JavaFX binding and event handling issues.
+- Learned effective UI/UX design practices by implementing smooth tab navigation and user feedback mechanisms (alerts).
+
+### Future Improvements
+- Implement database storage (MySQL) for persistent data.
+- Enhance UI with animations for better user experience.
+- Add search and filter functionality in summary tables.
+- Improve error handling with input validation.
+
+### Final Thoughts
+Developing VMUMS has been an insightful experience, allowing me to apply object-oriented programming principles, JavaFX GUI design, and event-driven programming effectively. The project demonstrates the importance of structured coding practices and modular design in application development.
+

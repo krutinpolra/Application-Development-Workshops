@@ -1,0 +1,88 @@
+/* === Global Styling === */
+.root {
+    -fx-background-color: 	#4A4A4A;
+    -fx-font-family: "Arial";
+    -fx-text-color: #FFFFFF;
+}
+
+/* === Title Styling === */
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.label.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3498db;
+}
+
+/* === TabPane Styling === */
+.tab-pane {
+    -fx-tab-min-height: 40px;
+    -fx-tab-min-width: 120px;
+}
+
+.tab {
+    -fx-background-color: #ecf0f1;
+}
+
+.tab:selected {
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+}
+
+/* === TextFields & ComboBox Styling === */
+.text-field, .combo-box {
+    -fx-pref-height: 35px;
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2px;
+}
+
+/* === Buttons Styling === */
+.button {
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 100px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.button:pressed {
+    -fx-background-color: #1f618d;
+}
+
+/* === HBox Buttons Container === */
+.hbox {
+    -fx-padding: 10px;
+    -fx-spacing: 15px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+/* === VBox Form Container === */
+.vbox {
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-color: #bdc3c7;
+}
+
+/* === Apply a shadow effect === */
+.shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 2, 2);
+}

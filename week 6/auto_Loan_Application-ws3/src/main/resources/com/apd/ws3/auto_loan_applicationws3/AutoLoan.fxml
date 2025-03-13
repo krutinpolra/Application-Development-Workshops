@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.apd.ws3.auto_loan_applicationws3.Controllers.AutoLoanController">
+    <children>
+        <VBox layoutX="30" layoutY="20" spacing="10" style="-fx-padding: 20; -fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <Label alignment="CENTER" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: black;" text="Auto Loan Application" />
+
+            <TitledPane expanded="true" text="Enter Customer Info">
+                <VBox spacing="5">
+                    <Label text="Name:" />
+                    <TextField fx:id="nameField" />
+                    <Label text="Phone number:" />
+                    <TextField fx:id="phoneField" />
+                    <Label text="City:" />
+                    <TextField fx:id="cityField" />
+                    <Label text="Province:" />
+                    <ComboBox fx:id="provinceComboBox">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Ontario" />
+                                <String fx:value="British Columbia" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </VBox>
+            </TitledPane>
+
+            <TitledPane expanded="true" text="Enter Vehicle Information">
+                <VBox spacing="5">
+                    <Label text="Type:" />
+                    <HBox spacing="10">
+                        <RadioButton fx:id="carRadio" text="Car" />
+                        <RadioButton fx:id="truckRadio" text="Truck" />
+                        <RadioButton fx:id="vanRadio" text="Family Van" />
+                        <RadioButton fx:id="motorcycleRadio" text="Motorcycle" />
+                        <RadioButton fx:id="evRadio" text="Electric Vehicle" />
+                    </HBox>
+                    <Label text="Age:" />
+                    <HBox spacing="10">
+                        <RadioButton fx:id="newRadio" text="New" />
+                        <RadioButton fx:id="usedRadio" text="Used" />
+                    </HBox>
+                    <Label text="Vehicle Price:" />
+                    <TextField fx:id="priceField" />
+                </VBox>
+            </TitledPane>
+
+            <TitledPane expanded="true" text="Loan Information">
+                <VBox spacing="5">
+                    <Label text="Down Payment:" />
+                    <TextField fx:id="downPaymentField" />
+                    <Label text="Interest Rate:" />
+                    <HBox spacing="10">
+                        <RadioButton fx:id="interest1" text="0.99%" />
+                        <RadioButton fx:id="interest2" text="1.99%" />
+                        <RadioButton fx:id="interest3" text="2.99%" />
+                        <RadioButton fx:id="interest4" text="3.99%" />
+                        <RadioButton fx:id="interestOther" text="Other" />
+                        <TextField fx:id="interestCustom" promptText="Enter custom rate" />
+                    </HBox>
+                    <Label text="Loan Duration:"/>
+                    <Slider fx:id="durationSlider" min="12" max="96" majorTickUnit="12" minorTickCount="2" snapToTicks="true" showTickMarks="true" showTickLabels="true"/>
+                    <Label text="Payment Frequency:" />
+                    <HBox spacing="10">
+                        <RadioButton fx:id="weeklyRadio" text="Weekly" />
+                        <RadioButton fx:id="biweeklyRadio" text="Bi-Weekly" />
+                        <RadioButton fx:id="monthlyRadio" text="Monthly" />
+                    </HBox>
+                </VBox>
+            </TitledPane>
+
+            <HBox alignment="CENTER" spacing="10">
+                <Button fx:id="calculateButton" onAction="#calculateLoan" text="Calculate" />
+                <Button fx:id="clearButton" onAction="#clearFields" text="Clear" />
+                <Button fx:id="saveRatesButton" onAction="#saveCurrentRate" text="Save Rates" />
+                <Button fx:id="showSavedRatesButton" onAction="#openSavedRatesView" text="Show Saved Rates" />
+                <Button fx:id="showAmortizationButton" onAction="#openAmortizationView" text="Show Amortization Schedule" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="formContainer" maxHeight="Infinity" maxWidth="Infinity" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.workshop_2.controller.HelloController">
+
+    <children>
+        <VBox fx:id="formContainer2" alignment="CENTER" layoutX="0.0" layoutY="0.0" maxHeight="Infinity" maxWidth="Infinity" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <!-- Title Label -->
+                <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="TOP" maxHeight="Infinity" maxWidth="Infinity" text="VMUM" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+
+                <!-- TabPane for different sections -->
+                <TabPane fx:id="tabPane" maxHeight="Infinity" maxWidth="Infinity" stylesheets="@css/styles.css" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                    <tabs>
+                        <!-- Add Vehicle Tab -->
+                        <Tab text="Add Vehicle">
+                            <content>
+                                <AnchorPane maxHeight="Infinity" maxWidth="Infinity">
+                                    <children>
+                                        <VBox layoutX="10.0" layoutY="10.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="226.0" prefWidth="580.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label text="Model" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="modelField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter model...(eg. Corolla)" VBox.vgrow="ALWAYS" />
+                                                <Label text="Make" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="makeField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Make...(eg. Toyota)" VBox.vgrow="ALWAYS" />
+                                                <Label text="Year" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="yearField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Year...(eg. 2022)" VBox.vgrow="ALWAYS" />
+                                                <Label text="Type" VBox.vgrow="ALWAYS" />
+                                                <ComboBox fx:id="typeOfCars" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                                    <items>
+                                                        <FXCollections fx:factory="observableArrayList">
+                                                            <String fx:value="Sedan" />
+                                                            <String fx:value="SUV" />
+                                                            <String fx:value="Truck" />
+                                                            <String fx:value="Van" />
+                                                        </FXCollections>
+                                                    </items>
+                                                </ComboBox>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                           <padding>
+                              <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                           </padding>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+
+                        <!-- Add Vehicle Maintenance Tab -->
+                        <Tab text="Add Vehicle Maintenance">
+                            <content>
+                                <AnchorPane maxHeight="Infinity" maxWidth="Infinity">
+                                    <children>
+                                        <VBox layoutX="10.0" layoutY="10.0" maxHeight="Infinity" maxWidth="Infinity" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label text="Date of maintenance" VBox.vgrow="ALWAYS" />
+                                                <DatePicker fx:id="maintenanceDate" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS" />
+                                                <Label text="Description" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="descriptionField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Description...(eg. Brake pad replacement)" VBox.vgrow="ALWAYS" />
+                                                <Label text="Cost" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="costField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter Cost...(eg. $1200)" VBox.vgrow="ALWAYS" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                    </padding>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+
+                        <!-- Add Vehicle Usage Tab -->
+                        <Tab text="Add Vehicle Usage">
+                            <content>
+                                <AnchorPane maxHeight="Infinity" maxWidth="Infinity">
+                                    <children>
+                                        <VBox layoutX="10.0" layoutY="10.0" maxHeight="Infinity" maxWidth="Infinity" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label text="Start date" VBox.vgrow="ALWAYS" />
+                                                <DatePicker fx:id="startDate" maxWidth="1.7976931348623157E308" />
+                                                <Label text="End Date" VBox.vgrow="ALWAYS" />
+                                                <DatePicker fx:id="endDate" maxWidth="1.7976931348623157E308" />
+                                                <Label text="Kilometers driven" VBox.vgrow="ALWAYS" />
+                                                <TextField fx:id="kmField" minHeight="-Infinity" minWidth="-Infinity" promptText="Enter KM...(eg. 100)" VBox.vgrow="ALWAYS" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                    </padding>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+
+                        <!-- Summary Tab -->
+                        <Tab text="Summary">
+                            <content>
+                                <AnchorPane maxHeight="Infinity" maxWidth="Infinity">
+                                    <children>
+                                        <VBox layoutX="10.0" layoutY="10.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="226.0" prefWidth="580.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <Label alignment="TOP_LEFT" text="Type" VBox.vgrow="ALWAYS" />
+                                                <ComboBox fx:id="showSummary" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                                    <items>
+                                                        <FXCollections fx:factory="observableArrayList">
+                                                            <String fx:value="Show Vehicle Details" />
+                                                            <String fx:value="Show Vehicle Maintenance Details" />
+                                                            <String fx:value="Show Vehicle Usage Details" />
+                                                        </FXCollections>
+                                                    </items>
+                                                </ComboBox>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                                    </padding>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+                </TabPane>
+
+                <!-- Buttons at the Bottom -->
+                <HBox fx:id="buttonContainer" alignment="BOTTOM_RIGHT" maxHeight="Infinity" maxWidth="Infinity" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="saveButton" onAction="#handleSave" text="Save" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="clearButton" onAction="#handleClear" text="Clear" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="previousButton" onAction="#handlePrevious" text="Previous" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="nextButton" onAction="#handleNext" text="Next" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+                </HBox>
+
+            </children>
+        </VBox>
+    </children>
+
+</AnchorPane>

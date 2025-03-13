@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.apd.ws3.auto_loan_applicationws3.Controllers.LoginController">
+  <children>
+    <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="CENTER" maxHeight="300" maxWidth="400" spacing="15" style="-fx-padding: 30; -fx-background-color: #ffffff; -fx-border-color: #ccc; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.5, 0, 0);">
+        <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-alignment: center;" text="Log In" />
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+          <columnConstraints>
+            <ColumnConstraints percentWidth="40" />
+            <ColumnConstraints percentWidth="60" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints percentHeight="50" />
+            <RowConstraints percentHeight="50" />
+          </rowConstraints>
+
+          <Label text="Enter Email:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          <TextField fx:id="emailField" promptText="Enter your email" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+          <Label text="Enter Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+          <PasswordField fx:id="passwordField" promptText="Enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        </GridPane>
+        <Button fx:id="loginButton" onAction="#handleLogin" style="-fx-font-size: 14px; -fx-padding: 10 20; -fx-alignment: center;" text="Log In" />
+      </VBox>
+    </StackPane>
+  </children>
+</AnchorPane>
