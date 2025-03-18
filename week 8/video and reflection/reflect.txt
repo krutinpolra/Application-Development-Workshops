@@ -1,0 +1,18 @@
+# reflect.txt
+
+1. If you would’ve to use the Property types instead of primitive data types?
+
+Using `SimpleStringProperty`, `SimpleIntegerProperty`, and `SimpleDoubleProperty` would make the application more dynamic, especially when working with JavaFX bindings. Properties provide built-in support for observability, which means they can automatically update UI components when the underlying data changes. In this project, if we had used property types directly in the models (e.g., `Part` and `Product` classes), it could have reduced boilerplate code for syncing UI elements with data. However, for this workshop's scale, using primitives kept things simple and readable. For larger applications where bidirectional data binding is essential, properties would offer more significant benefits.
+
+2. What was the most difficult part of handling inventory constraints (e.g., ensuring stock levels are within min/max limits)?
+
+The most difficult part for us was managing multiple overlapping validations while keeping the user flow smooth. Specifically, it was tricky to synchronize checks across various controllers like AddProductController and ModifyProductController.
+
+For instance, ensuring that the stock value is always between the min and max values while also confirming that min is not greater than max required carefully ordering the validation logic. Another challenging aspect was providing precise and user-friendly error messages that could guide users to correct their input.
+
+Additionally, we had to make sure that these validations didn’t conflict with the rules around associated parts—like enforcing that a product price can’t be lower than the sum of its associated parts’ prices. Balancing all these constraints together without overwhelming the user was a key difficulty in this project.
+
+3. How did you ensure that the application prevents invalid operations, such as deleting a product that still has associated parts?
+
+I added a check inside the `handleDeleteProduct()` method. Before deleting a product, the application checks if the product has associated parts by verifying if `getAllAssociatedParts().isEmpty()` returns `false`. If parts are still associated, an alert is shown, and deletion is blocked. This ensures no product is deleted while still linked to its parts, preserving data consistency.
+
