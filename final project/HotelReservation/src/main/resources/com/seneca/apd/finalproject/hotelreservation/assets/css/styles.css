@@ -1,0 +1,239 @@
+/* Dashboard fxml*/
+.dashboard-pane {
+    -fx-background-image: url("../images/dashboardBg.jpg");
+    -fx-background-size: cover;
+    -fx-background-color: lightblue;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.subtext-label-kiosk {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.dashboard-title {
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 5, 0, 2, 2);
+}
+
+
+.dashboard-btn {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+    -fx-cursor: hand;
+    -fx-padding: 15;
+}
+
+
+.dashboard-icon {
+    -fx-font-size: 64px;
+    -fx-text-fill: #333333;
+}
+
+
+.dashboard-text {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.bottom-btn-kiosk:hover {
+    -fx-background-color: #000000;
+}
+
+/* Number of guests fxml*/
+.guest-pane {
+    -fx-background-image: url('../images/background.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.title-label-kiosk {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.guest-card-kiosk {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 15, 0, 0, 0);
+}
+
+.card-heading-kiosk {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.count-label-kiosk {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.plus-minus-btn-kiosk {
+    -fx-background-color: transparent;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-border-color: transparent;
+}
+
+.small-label-kiosk {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.bottom-btn-kiosk {
+    -fx-background-color: #2f2f2f;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 30;
+    -fx-background-radius: 10;
+}
+
+/*Duration fxml*/
+.date-picker {
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+
+/*Guest detail form fxml*/
+.small-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-min-width: 120px;
+}
+
+.input-field {
+    -fx-pref-width: 400px;
+    -fx-padding: 8 10;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-border-color: transparent;
+    -fx-background-color: #ffffff;
+}
+
+/*Booking Summary*/
+/* Booking Summary Styles */
+.booking-pane {
+    -fx-background-image: url('../images/background.jpg');
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.summary-card-clickable {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.summary-card {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 15;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.summary-card-clickable:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 30, 0.3, 0, 5);
+}
+
+.summary-heading {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 0 0 10 0;
+}
+
+.summary-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-min-width: 100px;
+}
+
+/* 🟡 Updated */
+.summary-value {
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+    -fx-background-color: #f5f5f5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+    -fx-border-color: transparent;
+    -fx-pref-width: 200px;
+}
+
+.booking-btn {
+    -fx-background-color: #2f2f2f;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 25;
+    -fx-background-radius: 8;
+}
+
+.booking-btn:hover {
+    -fx-background-color: #000000;
+}
+
+/*cancellation fxml*/
+.reason-input-field {
+    -fx-pref-width: 300px;
+    -fx-padding: 8 10;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-border-color: transparent;
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333333;
+    -fx-opacity: 1;
+}
+
+.reason-input-field:prompt-text {
+    -fx-text-fill: #888888;
+}
+
+.checkbox-bold {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Confirmation Screen */
+.confirmation-pane {
+    -fx-background-color: transparent;
+}
+
+.confirmation-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.confirmation-text {
+    -fx-font-size: 18px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 0 40px;
+}
+
+.confirmation-card {
+    -fx-background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
+    -fx-background-radius: 20;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0, 0, 5);
+    -fx-spacing: 20;
+}

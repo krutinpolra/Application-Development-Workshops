@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane styleClass="guest-pane" stylesheets="@assets/css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seneca.apd.finalproject.hotelreservation.Controller.NumberOfGuestController">
+
+    <children>
+        <VBox alignment="CENTER" spacing="60" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <!-- Title Section -->
+            <VBox alignment="CENTER" spacing="5">
+                <Label styleClass="title-label-kiosk" text="🛏How many guests are we welcoming today?">
+                    <VBox.margin>
+                        <Insets top="30.0" bottom="5.0"/>
+                    </VBox.margin>
+                </Label>
+
+                <Label styleClass="subtext-label-kiosk" text="Please select the number of adults and children in your group.">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Label>
+            </VBox>
+
+
+            <!-- Main Cards -->
+            <HBox alignment="CENTER" spacing="80">
+                <!-- Adult Card -->
+                <VBox alignment="CENTER" spacing="20" styleClass="guest-card-kiosk">
+                    <ImageView fitHeight="200" fitWidth="200" preserveRatio="false">
+                        <clip>
+                            <Circle centerX="100" centerY="100" radius="100" />
+                        </clip>
+                        <image>
+                            <Image url="@assets/images/adults.jpg" />
+                        </image>
+                    </ImageView>
+                    <Label styleClass="card-heading-kiosk" text="Adult" />
+                    <HBox alignment="CENTER" spacing="20">
+                        <Button onAction="#handleAdultPlus" styleClass="plus-minus-btn-kiosk" text="+" />
+                        <Label fx:id="adultCountLabel" styleClass="count-label-kiosk" text="2" />
+                        <Button onAction="#handleAdultMinus" styleClass="plus-minus-btn-kiosk" text="-" />
+                    </HBox>
+                    <Label fx:id="adultWarningLabel" styleClass="small-label-kiosk" text="" visible="false" />
+                </VBox>
+
+                <!-- Children Card -->
+                <VBox alignment="CENTER" spacing="20" styleClass="guest-card-kiosk">
+                    <ImageView fitHeight="200" fitWidth="200" preserveRatio="false">
+                        <clip>
+                            <Circle centerX="100" centerY="100" radius="100" />
+                        </clip>
+                        <image>
+                            <Image url="@assets/images/Children.jpg" />
+                        </image>
+                    </ImageView>
+                    <Label styleClass="card-heading-kiosk" text="Children" />
+                    <HBox alignment="CENTER" spacing="20">
+                        <Button onAction="#handleChildPlus" styleClass="plus-minus-btn-kiosk" text="+" />
+                        <Label fx:id="childCountLabel" styleClass="count-label-kiosk" text="2" />
+                        <Button onAction="#handleChildMinus" styleClass="plus-minus-btn-kiosk" text="-" />
+                    </HBox>
+                    <Label fx:id="childrenWarningLabel" styleClass="small-label-kiosk" text="" visible="false" />
+                </VBox>
+            <VBox.margin>
+               <Insets bottom="20.0" left="20.0" right="20.0" />
+            </VBox.margin>
+            </HBox>
+
+            <!-- Bottom Buttons -->
+            <HBox alignment="CENTER" spacing="40">
+                <Button onAction="#handleRules" styleClass="bottom-btn-kiosk" text="Rules" />
+                <Button onAction="#handleMenu" styleClass="bottom-btn-kiosk" text="Menu" />
+                <Button onAction="#handleNext" styleClass="bottom-btn-kiosk" text="Next" />
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

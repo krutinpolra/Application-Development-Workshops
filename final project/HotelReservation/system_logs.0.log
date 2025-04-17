@@ -1,0 +1,301 @@
+Apr 06, 2025 11:28:28 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:28:28 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+SEVERE: Error loading dashboard
+java.lang.IllegalStateException: Location is not set.
+	at javafx.fxml/javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml/javafx.fxml.FXMLLoader.load(FXMLLoader.java:2523)
+	at com.seneca.apd.finalproject.hotelreservation/com.seneca.apd.finalproject.hotelreservation.Controller.LoginController.handleLogin(LoginController.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1852)
+	at javafx.fxml/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1724)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Node.fireEvent(Node.java:8792)
+	at javafx.controls/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)
+	at javafx.controls/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)
+	at javafx.base/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at javafx.base/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics/javafx.scene.Scene$MouseHandler.process(Scene.java:3897)
+	at javafx.graphics/javafx.scene.Scene.processMouseEvent(Scene.java:1878)
+	at javafx.graphics/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2623)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics/com.sun.glass.ui.View.handleMouseEvent(View.java:557)
+	at javafx.graphics/com.sun.glass.ui.View.notifyMouse(View.java:943)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+Apr 06, 2025 11:30:23 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:35:37 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:41:06 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:42:46 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:44:32 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:52:03 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:53:13 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:55:38 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:56:50 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:59:01 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 11:59:52 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:07:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:13:31 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:16:14 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:19:01 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:23:15 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:27:12 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:37:41 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:39:35 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:40:11 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:41:00 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:41:18 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:44:42 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 12:45:45 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 06, 2025 1:18:25 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:52:34 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:52:58 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:53:15 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:54:09 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:57:27 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 12:59:17 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:08:53 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:09:44 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:10:23 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:21:31 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:24:27 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:46:15 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 1:49:51 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:00:53 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+WARNING: Failed admin login attempt for username: krutin
+Apr 07, 2025 2:00:57 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+WARNING: Failed admin login attempt for username: krutin
+Apr 07, 2025 2:01:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:02:52 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:09:00 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:12:36 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:22:34 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+WARNING: Failed admin login attempt for username: krutin
+Apr 07, 2025 2:27:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:32:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:36:32 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 2:38:10 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 07, 2025 5:12:32 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 1:46:39 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 2:07:02 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 2:58:19 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 2:58:39 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:02:22 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:02:25 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:03:41 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:09:26 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:12:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:18:46 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:30:15 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 3:32:20 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 4:05:41 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 4:45:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 5:17:37 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 5:35:41 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 5:55:04 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 5:55:36 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:05:32 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:25:32 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:39:06 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:44:38 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:55:25 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 6:57:20 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:02:04 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:03:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:04:06 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:17:59 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:26:14 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:32:15 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:33:14 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 7:36:01 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:07:22 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:09:02 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:11:28 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:13:55 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:15:30 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:18:59 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 8:24:33 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:13:03 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:28:44 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:29:49 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:35:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:41:38 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:49:25 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:51:21 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 9:59:20 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 10:02:32 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 10:04:28 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 10:08:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 10:20:24 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 08, 2025 10:21:18 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 6:53:12 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:04:52 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:06:06 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:11:01 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:18:53 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:22:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 7:29:54 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 09, 2025 9:49:48 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:30:13 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:30:25 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: priyank
+Apr 14, 2025 10:34:05 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:38:55 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:46:53 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:53:38 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 10:56:38 AM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 14, 2025 12:35:16 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin
+Apr 17, 2025 12:02:18 PM com.seneca.apd.finalproject.hotelreservation.Controller.LoginController handleLogin
+INFO: Admin login success: krutin

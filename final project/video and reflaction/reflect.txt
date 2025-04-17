@@ -1,0 +1,24 @@
+Project Reflection: Hotel Reservation System
+Working on the Hotel Reservation System has been one of the most enriching and practical experiences in my software development journey. This project not only helped me implement core Java and JavaFX concepts, but also allowed me to dive deep into structuring real-world applications using the MVC (Model-View-Controller) architecture with proper database integration. Throughout the development lifecycle, I encountered multiple challenges, overcame them through debugging and research, and acquired valuable skills that I can now confidently carry forward into future projects.
+
+Challenges Faced and Solutions
+One of the first major challenges was implementing the MVC architecture properly. Initially, my controller logic was too coupled with the UI and data layers, which made debugging and extending features very difficult. To solve this, I restructured the project into clear packages: Controllers, Models, Views, and Database. Separating responsibilities made the codebase much more readable and scalable.
+
+Another notable challenge came when I tried to update bookings dynamically, including changing guest details, dates, and room selections. Although the data would appear to be updated in the UI, it wasn’t reflected in the SQLite database. After several hours of debugging, I realized the issue was caused by missing or incorrectly referenced values from the AppState class. Fixing this required careful validation of each input, using DatePicker controls for check-in and check-out fields, and ensuring proper PreparedStatement bindings during the update logic.
+
+Handling room availability also posed a unique challenge. Guests should only see available rooms, but admins should be able to view and select all rooms—regardless of status. To manage this, I created conditional SQL queries that check the AppState.isAdmin() flag and modify the data load logic accordingly. This dynamic filtering added complexity but greatly improved the user experience and system reliability.
+
+I also faced visual and structural FXML issues. Several times the app would crash due to mismatched FXML IDs or missing controller bindings. For example, missing fx:id on newly added DatePicker elements caused NullPointerException errors that were hard to trace. I fixed these by validating all IDs, initializing them in the controller, and ensuring the controller logic matched the latest FXML file.
+
+Finally, another hurdle was the database seeding and script generation. I had to pre-populate the database with admin credentials and around 30 room records. Ensuring that the script didn't duplicate entries every time the app restarted required writing proper existence checks before inserting records.
+
+ Key Learnings
+The most significant learning was how powerful and essential the MVC structure is in organizing code in large-scale applications. This project taught me the importance of clean separation between user interface, business logic, and data access layers.
+
+I also gained strong hands-on experience in working with JavaFX, especially in managing layout components, FXML integration, and styling using CSS. Features like live form validation, dynamic data binding with TableView, and scene transitions using SceneNavigator were great learning moments.
+
+Working with SQLite and JDBC improved my understanding of relational databases, query construction, foreign key relationships, and CRUD operations using Java. I also became better at reading stack traces and interpreting errors meaningfully to trace down and solve bugs.
+
+One underrated but vital takeaway was learning to design systems that are user-friendly and guide the user through logical flows. I added friendly prompts, validation alerts, and contextual instructions on each screen to reduce confusion and improve the overall user experience.
+
+Overall, this project was a comprehensive exercise in full-stack desktop application development. It tested my problem-solving skills, reinforced core programming concepts, and taught me how to think critically when building systems that are both functional and user-friendly. I now feel much more confident in designing, debugging, and deploying complete applications from the ground up.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="confirmation-pane" stylesheets="@assets/css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seneca.apd.finalproject.hotelreservation.Controller.EndingScreenController">
+    <children>
+        <ImageView fitHeight="1080.0" fitWidth="1920.0" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@assets/images/confirmation_bg.jpg" />
+            </image>
+        </ImageView>
+        <VBox alignment="CENTER" spacing="20" styleClass="confirmation-card" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="300.0">
+            <Label styleClass="confirmation-title" text="🎉 Booking Confirmed!" />
+
+            <!-- FIXED MULTILINE TEXT -->
+            <Label styleClass="confirmation-text" wrapText="true">
+                <text>
+                    Thank you for booking with KP Hotel Self-Service Kiosk!
+                </text>
+            </Label>
+
+            <Label styleClass="confirmation-text" wrapText="true">
+                <text>
+                    Please visit the front desk for billing before check-out.
+                </text>
+            </Label>
+
+            <Button onAction="#handleGoHome" styleClass="bottom-btn-kiosk" text="Go to Home" />
+        </VBox>
+    </children>
+</AnchorPane>
